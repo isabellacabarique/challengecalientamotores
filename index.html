@@ -43,6 +43,11 @@ footer img{height:24px;margin-left:-4px} footer .h{font-size:13px;letter-spacing
 @media (max-width:760px){ .days{grid-template-columns:repeat(3,1fr)} } @media (max-width:640px){ .days{grid-template-columns:1fr 1fr} }
 @media (max-width:560px){ .wrap{padding:18px 16px} header img{height:30px} .tag{font-size:13px} .hero{padding:22px 20px} .dots{display:none}
  .benefits{grid-template-columns:1fr} .day{min-height:0;padding:12px} .day .t{font-size:15px} footer{grid-template-columns:1fr;justify-items:center} footer .d{display:none} }
+.cal{margin-top:12px;border-radius:14px;padding:16px 18px;background:var(--soft);border:1.5px solid var(--line);display:flex;gap:14px;align-items:center}
+.cal .e{font-size:26px;line-height:1} .cal .tx{flex:1;display:flex;flex-direction:column} .cal .tx b{font-size:16px} .cal .tx span{font-size:14px;color:var(--gray)}
+.cal a{display:inline-flex;align-items:center;gap:7px;background:var(--teal);color:#fff;text-decoration:none;font-weight:500;font-size:14px;border-radius:30px;padding:9px 18px;white-space:nowrap}
+.cal a:hover{background:var(--deep)} .cal svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:560px){ .cal{flex-wrap:wrap} .cal a{width:100%;justify-content:center} }
 </style><script>(function(){var H="a2620636544c16c0b03b90fc828d3a97e83c3e19eb42a23922e7a0925c50eae4",ok=false;try{ok=localStorage.getItem("cm_ok")===H}catch(e){}if(location.hash.indexOf("k="+H)>-1){ok=true;try{localStorage.setItem("cm_ok",H)}catch(e){}history.replaceState(null,"",location.pathname+location.search)}if(!ok)document.documentElement.classList.add("cm-locked");window.CM_H=H})();</script>
 <style>.cm-locked body>*:not(#cm-gate){display:none!important} #cm-gate{display:none} .cm-locked #cm-gate{display:flex}
 #cm-gate{position:fixed;inset:0;z-index:99;background:linear-gradient(160deg,#E9F6F8,#fff 60%);align-items:center;justify-content:center;padding:18px;font-family:'Poppins','DejaVu Sans',sans-serif}
@@ -85,6 +90,8 @@ footer img{height:24px;margin-left:-4px} footer .h{font-size:13px;letter-spacing
 
 <h2>Los 19 retos</h2>
 <ul class="days" id="days"></ul>
+
+<div class="cal"><span class="e">📅</span><div class="tx"><b>Tu calendario del reto</b><span>Imprímelo y marca cada reto que completes, con la fecha.</span></div><a href="Calendario-Reto-Calienta-motores.pdf" download><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>Descargar PDF</a></div>
 
 <div class="prize"><span class="e">🏆</span><p><b>Cuando termines los 19 retos</b>, desbloqueas el <b>Reto de 30 días para mejorar tu speaking</b>. Escríbele a Santi por WhatsApp con un pantallazo de tu post en la comunidad.</p></div>
 
