@@ -80,15 +80,15 @@ footer img{height:24px;margin-left:-4px} footer .h{font-size:13px;letter-spacing
 // Para agregar el video: pega aquí el link de Vimeo o YouTube.
 const VIDEO_URL = "";
 
-// Cada reto vive en reto-N/. Para activarlo: agrega su línea con ready:true.
+// Cada reto activo tiene su propio link (url). Los demás muestran la página "muy pronto" en reto-N/.
 const DAYS = [
-  {n:1, t:"Joey and Chandler have a fight", s:"Friends · 11 oraciones", ready:true},
+  {n:1, t:"Joey and Chandler have a fight", s:"Friends · 11 oraciones", ready:true, url:"https://challenge1calientamotores.immersa.com.co"},
 ];
 const TOTAL = 19;
 for(let n=DAYS.length+1; n<=TOTAL; n++) DAYS.push({n, t:"Próximamente", s:"Nueva escena"});
 
 document.getElementById('days').innerHTML = DAYS.map(d =>
-  `<li><a class="day${d.ready?'':' lock'}" href="reto-${d.n}/"><span class="n">Reto ${d.n}</span><span class="t">${d.ready?'':'🔒 '}${d.t}</span><span class="s">${d.s}</span><span class="go">Entrar al Reto ${d.n} →</span></a></li>`).join('');
+  `<li><a class="day${d.ready?'':' lock'}" href="${d.url||`reto-${d.n}/`}"><span class="n">Reto ${d.n}</span><span class="t">${d.ready?'':'🔒 '}${d.t}</span><span class="s">${d.s}</span><span class="go">Entrar al Reto ${d.n} →</span></a></li>`).join('');
 
 function embed(u){
   let m;
