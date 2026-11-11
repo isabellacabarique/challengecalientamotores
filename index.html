@@ -107,12 +107,13 @@ const DAYS = [
   {n:2, t:"Ross and his dad have dinner", s:"Friends · 13 oraciones", ready:true, url:"https://challenge2calientamotores.immersa.com.co"},
   {n:3, t:"Catherine Paiz", s:"Entrevista · 13 oraciones", ready:true, url:"https://challenge3calientamotores.immersa.com.co"},
   {n:4, t:"Oprah and Kristin Cabot", s:"Entrevista · 15 oraciones", ready:true, url:"https://challenge4calientamotores.immersa.com.co"},
+  {n:5, t:"Brie Larson (Captain Marvel)", s:"", ready:true, url:"https://challenge5calientamotores.immersa.com.co"},
 ];
 const TOTAL = 19;
 for(let n=DAYS.length+1; n<=TOTAL; n++) DAYS.push({n, t:"Próximamente", s:"Nueva escena"});
 
 document.getElementById('days').innerHTML = DAYS.map(d =>
-  `<li><a class="day${d.ready?'':' lock'}" href="${d.url||`reto-${d.n}/`}"><span class="n">Reto ${d.n}</span><span class="t">${d.ready?'':'🔒 '}${d.t}</span><span class="s">${d.s}</span><span class="go">Entrar al Reto ${d.n} →</span></a></li>`).join('');
+  `<li><a class="day${d.ready?'':' lock'}" href="${d.url||`reto-${d.n}/`}"><span class="n">Reto ${d.n}</span><span class="t">${d.ready?'':'🔒 '}${d.t}</span><span class="go">Entrar al Reto ${d.n} →</span></a></li>`).join('');
 
 function embed(u){
   let m;
