@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reto Calienta motores · Immersa Academy</title>
+<title>Reto Linking sounds · Immersa Academy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -67,7 +67,7 @@ footer img{height:24px;margin-left:-4px} footer .h{font-size:13px;letter-spacing
 
 <div class="hero"><div class="dots"><i></i><i></i><i></i></div>
 <small>Shadow the Scene · Escenas de Friends</small>
-<h1>¡Bienvenido al Reto Calienta motores!</h1>
+<h1>¡Bienvenido al Reto Linking sounds!</h1>
 <p>Un reto para que pierdas el miedo a hablar, imitando escenas reales en inglés. Poco a poco, vas a calentar motores para hablar con más fluidez y seguridad.</p></div>
 
 <div class="video" id="video"><div class="ph"><div class="c"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><b>Video de bienvenida</b><span>Muy pronto vas a encontrar aquí el video donde te explico el reto.</span></div></div>
@@ -110,6 +110,7 @@ const DAYS = [
   {n:5, t:"Brie Larson (Captain Marvel)", s:"", ready:true, url:"https://challenge5calientamotores.immersa.com.co"},
   {n:6, t:"Steve Carell", s:"", ready:true, url:"https://challenge6calientamotores.immersa.com.co"},
   {n:7, t:"Monica makes jam", s:"", ready:true, url:"https://challenge7calientamotores.immersa.com.co"},
+  {n:8, t:"Shonda Rhimes (TED Talk)", s:"", ready:true, url:"https://challenge8calientamotores.immersa.com.co"},
 ];
 const TOTAL = 19;
 for(let n=DAYS.length+1; n<=TOTAL; n++) DAYS.push({n, t:"Próximamente", s:"Nueva escena"});
@@ -127,7 +128,7 @@ if(VIDEO_URL){ const v=document.getElementById('video'); v.classList.add('has');
   v.innerHTML=`<iframe src="${embed(VIDEO_URL)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Video de bienvenida"></iframe>`; }
 </script>
 <div id="cm-gate" role="dialog" aria-modal="true" aria-labelledby="cm-t"><div class="box">
-<div class="ic">🔒</div><small>Reto exclusivo</small><h2 id="cm-t">Reto Calienta motores</h2>
+<div class="ic">🔒</div><small>Reto exclusivo</small><h2 id="cm-t">Reto Linking sounds</h2>
 <p>Este reto se desbloquea cuando llegas al <b>nivel 3 (Shy Speaker)</b>. Escribe tu contraseña para entrar.</p>
 <form id="cm-f"><input id="cm-p" type="password" placeholder="Contraseña" autocomplete="current-password" aria-label="Contraseña"><button type="submit">Entrar al reto</button><div class="err" id="cm-e" aria-live="polite"></div></form>
 <div class="help">¿Ya eres Shy Speaker y no tienes la contraseña? <a href="https://wa.me/573023629834?text=Hola%20Santi%2C%20soy%20Shy%20speaker%20y%20necesito%20la%20contrase%C3%B1a%20del%20Reto%20Calienta%20motores" target="_blank" rel="noopener">Escríbele a Santi</a></div>
