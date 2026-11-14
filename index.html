@@ -88,7 +88,7 @@ footer img{height:24px;margin-left:-4px} footer .h{font-size:13px;letter-spacing
 </ol>
 
 <h2>Los 10 retos</h2>
-<div class="cal"><span class="e">📅</span><div class="tx"><b>Tu calendario del reto</b><span>Imprímelo y marca cada reto que completes, con la fecha.</span></div><a href="Calendario-Reto-Calienta-motores.pdf" download><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>Descargar PDF</a></div>
+<div class="cal"><span class="e">📅</span><div class="tx"><b>Tu calendario del reto</b><span>Imprímelo y marca cada reto que completes, con la fecha.</span></div><a href="Calendario-Reto-Linking-sounds.pdf" download><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>Descargar PDF</a></div>
 <ul class="days" id="days"></ul>
 
 <div class="prize"><span class="e">🏆</span><p><b>Este es el reto 1 de 3</b> para desbloquear el <b>Reto de 30 días para mejorar tu speaking</b>.</p></div>
@@ -101,16 +101,16 @@ const VIDEO_URL = "";
 
 // Cada reto activo tiene su propio link (url). Los demás muestran la página "muy pronto" en reto-N/.
 const DAYS = [
-  {n:1, t:"Joey and Chandler have a fight", s:"Friends · 11 oraciones", ready:true, url:"https://challenge1calientamotores.immersa.com.co"},
-  {n:2, t:"Ross and his dad have dinner", s:"Friends · 13 oraciones", ready:true, url:"https://challenge2calientamotores.immersa.com.co"},
-  {n:3, t:"Catherine Paiz", s:"Entrevista · 13 oraciones", ready:true, url:"https://challenge3calientamotores.immersa.com.co"},
-  {n:4, t:"Oprah and Kristin Cabot", s:"Entrevista · 15 oraciones", ready:true, url:"https://challenge4calientamotores.immersa.com.co"},
-  {n:5, t:"Brie Larson (Captain Marvel)", s:"", ready:true, url:"https://challenge5calientamotores.immersa.com.co"},
-  {n:6, t:"Steve Carell", s:"", ready:true, url:"https://challenge6calientamotores.immersa.com.co"},
-  {n:7, t:"Monica makes jam", s:"", ready:true, url:"https://challenge7calientamotores.immersa.com.co"},
-  {n:8, t:"Shonda Rhimes (TED Talk)", s:"", ready:true, url:"https://challenge8calientamotores.immersa.com.co"},
-  {n:9, t:"Mark Cuban", s:"", ready:true, url:"https://challenge9calientamotores.immersa.com.co"},
-  {n:10, t:"Kendall Jenner", s:"", ready:true, url:"https://challenge10calientamotores.immersa.com.co"},
+  {n:1, t:"Joey and Chandler have a fight", s:"Friends · 11 oraciones", ready:true, url:"https://challenge1linkingsounds.immersa.com.co"},
+  {n:2, t:"Ross and his dad have dinner", s:"Friends · 13 oraciones", ready:true, url:"https://challenge2linkingsounds.immersa.com.co"},
+  {n:3, t:"Catherine Paiz", s:"Entrevista · 13 oraciones", ready:true, url:"https://challenge3linkingsounds.immersa.com.co"},
+  {n:4, t:"Oprah and Kristin Cabot", s:"Entrevista · 15 oraciones", ready:true, url:"https://challenge4linkingsounds.immersa.com.co"},
+  {n:5, t:"Brie Larson (Captain Marvel)", s:"", ready:true, url:"https://challenge5linkingsounds.immersa.com.co"},
+  {n:6, t:"Steve Carell", s:"", ready:true, url:"https://challenge6linkingsounds.immersa.com.co"},
+  {n:7, t:"Monica makes jam", s:"", ready:true, url:"https://challenge7linkingsounds.immersa.com.co"},
+  {n:8, t:"Shonda Rhimes (TED Talk)", s:"", ready:true, url:"https://challenge8linkingsounds.immersa.com.co"},
+  {n:9, t:"Mark Cuban", s:"", ready:true, url:"https://challenge9linkingsounds.immersa.com.co"},
+  {n:10, t:"Kendall Jenner", s:"", ready:true, url:"https://challenge10linkingsounds.immersa.com.co"},
 ];
 const TOTAL = 10;
 for(let n=DAYS.length+1; n<=TOTAL; n++) DAYS.push({n, t:"Próximamente", s:"Nueva escena"});
@@ -141,7 +141,7 @@ var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(v));var h=[.
 if(h===window.CM_H){try{localStorage.setItem("cm_ok",h)}catch(_){}document.documentElement.classList.remove("cm-locked");window.scrollTo(0,0)}
 else{var bx=f.parentNode;document.getElementById("cm-e").textContent="Contraseña incorrecta. Inténtalo de nuevo.";bx.classList.remove("shake");void bx.offsetWidth;bx.classList.add("shake")}});
 // pasa el acceso al link del Reto 1 (otro dominio)
-document.querySelectorAll('a[href*="calientamotores.immersa.com.co"]').forEach(function(a){a.addEventListener("click",function(){var ok=false;try{ok=localStorage.getItem("cm_ok")===window.CM_H}catch(_){}if(ok&&a.href.indexOf("#")<0)a.href=a.href+"#k="+window.CM_H})});
+document.querySelectorAll('a[href*="linkingsounds.immersa.com.co"]').forEach(function(a){a.addEventListener("click",function(){var ok=false;try{ok=localStorage.getItem("cm_ok")===window.CM_H}catch(_){}if(ok&&a.href.indexOf("#")<0)a.href=a.href+"#k="+window.CM_H})});
 })();</script><!--vmodal-->
 <div class="vmodal noprint" id="vmodal" role="dialog" aria-modal="true" aria-label="Cómo grabar tus retos">
   <div class="vwrap">
